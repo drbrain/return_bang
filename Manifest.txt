@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.rdoc
+Rakefile
+lib/return_bang.rb
+lib/return_bang/kernel.rb
+test/test_return_bang.rb

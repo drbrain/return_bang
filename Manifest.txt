@@ -4,5 +4,5 @@ Manifest.txt
 README.rdoc
 Rakefile
 lib/return_bang.rb
-lib/return_bang/kernel.rb
+lib/return_bang/everywhere.rb
 test/test_return_bang.rb

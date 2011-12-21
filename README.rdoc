@@ -12,22 +12,14 @@ enemies *and* your friends!  What could possibly go wrong?
 
 == Features
 
-* Implements non-local exits for named and stack-based exit points
-* Uses continuations
-* Ignores pesky ensure blocks
-
-== Testimonials
-
-"you'll wind up with your cock in /dev/null somehow"
-
-"Haha! Right! This skips ensure… SO EVIL‼‼"
-
-"This is so evil that 6 def test_… have turned into: 16 tests, 65 assertions,
-18 failures, 7 errors"
+* Implements non-local exits for methods
+* Nestable
+* Named and stack-based exit points, go exactly where you need to be
+* Ignores pesky ensure blocks for when you really, really need to return
 
 == Synopsis
 
-  require 'return_bang/kernel'
+  require 'return_bang/everywhere'
 
   def some_method
     deeply_nested
@@ -42,6 +34,15 @@ enemies *and* your friends!  What could possibly go wrong?
     some_method
   end
   # resumes here
+
+== Testimonials
+
+"you'll wind up with your cock in /dev/null somehow" -- slyphon
+
+"Haha! Right! This skips ensure… SO EVIL‼‼" -- drbrain
+
+"This is so evil that 6 def test_… have turned into: 16 tests, 65 assertions,
+18 failures, 7 errors" -- drbrain
 
 == Install
 

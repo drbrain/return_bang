@@ -12,6 +12,7 @@ Hoe.spec 'return_bang' do
   rdoc_locations << 'docs.seattlerb.org:/data/www/docs.seattlerb.org/return_bang/'
 
   self.readme_file = 'README.rdoc'
+  self.extra_rdoc_files << 'README.rdoc'
 end
 
 # vim: syntax=ruby

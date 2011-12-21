@@ -13,7 +13,13 @@ end
 # points may be arbitrarily nested.  #return! resumes at the previous resume
 # point, #return_to returns to a named return point.
 #
+# require 'return_bang' gives you a module you may include only in your
+# application or library code.  require 'return_bang/everywhere' includes
+# ReturnBang in Object, so it is only recommended for application code use.
+#
 # Example:
+#
+#   include ReturnBang
 #
 #   def framework_loop
 #     loop do
@@ -61,7 +67,7 @@ module ReturnBang
     Thread.current[:return_bang_names] ||= {}
   end
 
-  if {}.respond_to? :key then
+  if {}.respond_to? :key then # 1.9
     def _return_bang_pop # :nodoc:
       return_point = _return_bang_stack.pop
 
@@ -69,7 +75,7 @@ module ReturnBang
 
       return_point
     end
-  else
+  else # 1.8
     def _return_bang_pop # :nodoc:
       return_point = _return_bang_stack.pop
       value = _return_bang_stack.length

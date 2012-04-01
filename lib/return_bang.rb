@@ -72,7 +72,7 @@ require 'continuation'
 
 module ReturnBang
 
-  VERSION = '1.0'
+  VERSION = '1.1'
 
   ##
   # Raised when attempting to return! when you haven't registered a location

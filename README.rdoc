@@ -6,16 +6,26 @@ bugs :: https://github.com/drbrain/return_bang/issues
 
 == Description
 
-return_bang implements non-local exits from methods.  Use return_bang to exit
-back to a processing loop from deeply nested code, or just to confound your
-enemies *and* your friends!  What could possibly go wrong?
+return_bang implements non-local exits for methods.  As a bonus, you also get
+exception handling that ignores standard Ruby's inflexible begin; rescue;
+ensure; end syntax.
+
+Use return_bang to exit back to a processing loop from deeply nested code, or
+just to confound your enemies *and* your friends!  What could possibly go
+wrong?
 
 == Features
 
 * Implements non-local exits for methods
 * Nestable
 * Named and stack-based exit points, go exactly where you need to be
-* Ignores pesky ensure blocks for when you really, really need to return
+* Full exception handling support through raise!, rescue! and ensure!
+* Ignores pesky ensure, rescue and require blocks for when you really, really
+  need to return
+
+== Problems
+
+* Not enough use of continuations
 
 == Synopsis
 

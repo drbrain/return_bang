@@ -5,14 +5,14 @@ require 'hoe'
 
 Hoe.plugin :minitest
 Hoe.plugin :git
+Hoe.plugin :travis
 
 Hoe.spec 'return_bang' do
   developer 'Eric Hodel', 'drbrain@segment7.net'
 
   rdoc_locations << 'docs.seattlerb.org:/data/www/docs.seattlerb.org/return_bang/'
 
-  self.readme_file = 'README.rdoc'
-  self.extra_rdoc_files << 'README.rdoc'
+  spec_extras['required_ruby_version'] = '>= 1.9.2'
 end
 
 # vim: syntax=ruby

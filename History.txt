@@ -1,5 +1,12 @@
+=== 1.1 / 2012-04-01
+
+* Minor enhancements
+  * Added raise! to raise exceptions
+  * Added rescue! to rescue exceptions raised
+  * Added ensure! to always execute a block of code to perform cleanup
+
 === 1.0 / 2011-12-20
 
-* Major enhancements
+* Major enhancement
   * Birthday!
 
